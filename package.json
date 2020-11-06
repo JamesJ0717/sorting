@@ -1,0 +1,8 @@
+{
+  "name": "sorting-web",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:JamesJ0717/sorting.git",
+  "author": "James Johnson <me@jamesjohnson.io>",
+  "license": "MIT"
+}
