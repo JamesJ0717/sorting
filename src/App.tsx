@@ -96,7 +96,6 @@ function App() {
     }
 
     let partition = (array: BarProps[], left: number, right: number) => {
-      console.log(array);
       const pivot = array[Math.floor((right + left) / 2)].height;
       let i = left;
       let j = right;
@@ -139,16 +138,13 @@ function App() {
     }, []);
 
     let bubbleSort = (inputArr: BarProps[]) => {
-      console.log(inputArr);
       let len = inputArr.length;
       for (let i = 0; i < len; i++) {
         for (let j = 0; j < len - 1; j++) {
-          console.log(inputArr[j].height, inputArr[j + 1].height);
           if (inputArr[j].height > inputArr[j + 1].height) {
             let tmp = inputArr[j];
             inputArr[j] = inputArr[j + 1];
             inputArr[j + 1] = tmp;
-            console.log({ tmp });
           }
         }
       }
